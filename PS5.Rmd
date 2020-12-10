@@ -1,0 +1,53 @@
+---
+title: "Reproducing Angelucci & Cagé's 'Newspapers in Times of Low Advertising Revenues'"
+Author: "Yuyan Xu"
+date: "8 December 2020"
+Abstract: The present paper aims to replicate the results from Angelucci & Cagé’s paper, and provide more validity to the finding that alternate advertising platforms tend to decrease the newspaper producers'incentives to advertise, whcih leads to a decrease in journalistics-intensive content in the newspapers. <br> Keywords - advertising revenues; French newspaper; journalistic-intensive content; readers demand; pricing strategies
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(haven)
+library(tidyverse)
+library(labelled)
+library(ggplot2)
+library(car)
+library(MASS)
+library(lattice)
+library(memisc)
+library(data.table)
+```
+#Introduction
+  The advancement in communication technology today provides general readers with more ways to access information. People can easily fetch news from  TV, smartphones, tablets, etc. It is of interest that how newspaper industry change their method of delivering news, and how their advertising revenues changes corresponding with the newspaper content and pricing. In Angelucci & Cagé's “Newspapers in Times of Low Advertising Revenues”, they explored the shock brought to the advertising side of French newspaper industry with the introduction of television advertising. Also, they used empirical analysis to discover the relationship between advertising revenues and the incentive of newspaper producers put journalistic-intensive contents in their publications (Angelucci & Cagé, 2019). They found that there was a decline in newspaper producers’ willingness to pay for advertising for attracting readers’ attention with the introduction of alternative advertising platforms; also, a decrease in advertising avenue lead to a corresponding decrease in journalistic-intensive content in newspaper (@Angelucci & Cagé, 2019). 
+  <br>
+  The present paper aims to reproduce these results using simple linear model with ordinary least squares estimators. The data would be the data used in Angelucci & Cagé’s paper: the information about newspaper prices, revenues, and circulation from the French Ministry of Information’s non-publicly available records in the National archives, which includes 68 local newspapers and 12 national newspaper; the number of journalist from the non-publicly available paper records of the “Commission de la carte d’identité des journalistes professionnels” (CCIJP) , which includes 63 out of the 68 local newspapers for which we have revenue data, and 11 out of the 12 national newspapers; information about advertising prices and quantity of advertising from “Tarif Media,” and French National Library respectively.
+  <br>
+  We found that…TBD, this result replicated/did not replicate the results from Angelucci & Cagé’s paper. This suggests that…TBD.
+
+
+#Data
+```{r}
+dta <- as.data.frame(as.data.set(Stata.file("/Users/christina/Final Project/data/Angelucci_Cage_AEJMicro_dataset.dta")))
+ad_dta <- as.data.frame(as.data.set(Stata.file("/Users/christina/Final Project/data/Angelucci_Cage_AEJMicro_Descriptive_evidence_advertisement.dta")))
+ad_industry_dta <- as.data.frame(as.data.set(Stata.file("/Users/christina/Final Project/data/Angelucci_Cage_AEJMicro_Descriptive_evidence_advertising_industry.dta")))
+tel_quality_dta <- as.data.frame(as.data.set(Stata.file("/Users/christina/Final Project/data/Angelucci_Cage_AEJMicro_Descriptive_evidence_television_quality.dta")))
+US_dta <- as.data.frame(as.data.set(Stata.file("/Users/christina/Final Project/data/Angelucci_Cage_AEJMicro_Descriptive_evidence_US.dta")))
+
+```
+
+
+
+#Model
+
+
+#Result
+
+#Discussion
+
+#Appendix
+Code for this analysis is available at:
+
+#Reference
+Angelucci, Cage. (2015). Newspapers in Times of Low Advertising Revenues. American Economic Journal: Microeconomics, 11(3). DOI: 10.1257/mic.20170306
+
