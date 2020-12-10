@@ -2,7 +2,7 @@
 title: "Reproducing Angelucci & Cagé's 'Newspapers in Times of Low Advertising Revenues'"
 Author: "Yuyan Xu"
 date: "8 December 2020"
-Abstract: The present paper aims to replicate the results from Angelucci & Cagé’s paper, and provide more validity to the finding that alternate advertising platforms tend to decrease the newspaper producers'incentives to advertise, whcih leads to a decrease in journalistics-intensive content in the newspapers. <br> Keywords - advertising revenues; French newspaper; journalistic-intensive content; readers demand; pricing strategies
+abstract: The present paper aims to replicate the results from Angelucci & Cagé’s paper, and provide more validity to the finding that alternate advertising platforms tend to decrease the newspaper producers'incentives to advertise, whcih leads to a decrease in journalistics-intensive content in the newspapers. <br> Keywords - advertising revenues; French newspaper; journalistic-intensive content; readers demand; pricing strategies
 output: html_document
 ---
 
